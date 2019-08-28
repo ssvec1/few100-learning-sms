@@ -4,15 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Front End Web 100</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <h1>Front End Web 100 Starter</h1>
-        <h2>Progressive ITU</h2>
+    <header class="page-header container-fluid jumbotron">
+        <h1>Simple Calculator</h1>
     </header>
-    <main>
-        
+    <main class="container">
+        <div class="alert alert-info">
+            <h2>Answer here:
+                <span id=answer></span></h2>
+        </div>
+        <div class="form-group">
+            <label for="number1">First number</label>
+            <input name="number1"
+                   id="number1"
+                   type="number"
+                   class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="number2">First number</label>
+            <input name="number2"
+                   id="number2"
+                   type="number"
+                   class="form-control">
+        </div>
+        <div>
+            <input type="button"
+                   value="Add"
+                   id="add"
+                   class="btn btn-primary">
+        </div>
     </main>
 </body>
 
